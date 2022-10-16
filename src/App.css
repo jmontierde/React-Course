@@ -1,12 +1,12 @@
 .App {
   text-align: center;
   height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -15,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #4570c8;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,32 +25,36 @@
   color: white;
 }
 
+
 .nav-logo {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
 }
 
 .nav-menu { 
-  background-color: rgba(5, 133, 158, 0.708);
+  background-color: rgba(4, 3, 3, 0.838);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4rem;
+  padding: .5rem 4rem;
+  margin-bottom: 0;
 
 }
 .nav-menu .nav-item{ 
    display: flex;
+   justify-content: space-between;
    list-style: none;
 }
 .nav-menu .nav-item .item-list { 
-  margin: auto;
+  margin: 0;
   padding-left: 3rem;
+  color: #fff;
+ 
+
+
 }
 
-img {
-  width: 100px;
-  height: 100px;
-}
+
 
 /* Ordered List */
 .OrderedList{
@@ -72,11 +76,38 @@ img {
 .App-link {
   color: #61dafb;
 }
+
+/* About */
+.about { 
+  background-color: rgba(17, 14, 14, 0.775);
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: center;
+  height: 100%;
+  margin-top: 0;
+  color: #fff;
+  padding-left: 5rem;
+}
+.about h1 {
+  font-size: 3rem;
+}
+.about-item-list{
+  text-align: justify;
+  color: rgb(0, 0, 64);
+  font-size: 2rem;
+}
+.about-item-list span {
+  color: #fff;
+  font-size: 1.2rem;
+
+}
+
 /* Footer */
 .footer { 
   background-color: gray;
-  position:absolute;
-  bottom:0;
+  /* position:absolute;
+  bottom:0; */
   width: 100%;
   padding: 1rem 0;
   font-weight: 700;
