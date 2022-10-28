@@ -1,9 +1,12 @@
 import './App.css';
 
-import Intro from './Solo Projects/Intro';
-import About from './Solo Projects/About'
-import Interests from './Solo Projects/Interests';
-import Footer from './Solo Projects/Footer';
+import Intro from './Components/Project 1/Intro'
+import About from './Components/Project 1/About'
+import Interests from './Components/Project 1/Interests'
+import Footer from './Components/Project 1/Footer'
+import Navbar from './Components/Project2/Navbar';
+import Hero from './Components/Project2/Hero';
+import Cards from './Components/Project2/Cards';
 // import Header from './Components/Header';
 // import OrderedList from './Components/OrderedList';
 // import Footer from './Components/Footer';
@@ -15,10 +18,16 @@ function App() { // App.js is the parent Compenent wherein it will get all the o
       <About />
       <OrderedList />
       <Footer /> */}
-      <Intro />
-      <About />
-      <Interests />
-      <Footer />
+      {/* <div className='Project-1'>
+        <Intro />
+        <About />
+        <Interests />
+        <Footer />
+      </div> */}
+      <Navbar />
+      <Hero />
+      <Cards/>
+      
     </div>
   );
 }
