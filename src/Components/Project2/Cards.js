@@ -1,32 +1,34 @@
 import React from 'react'
 import { FaStar } from 'react-icons/fa';
 
-function Cards({img, status, title, rate}) { // Destructuring props
+function Cards(props) { // Destructuring props
    
+
+
   return (
     <div className='card-container'>
         <div className='cards'>
-            <img src={img} alt="" />
+            <img src={props.img} alt="" />
             <div className='cards-description'>
-                <p><FaStar/> {status}</p>
-                <p>{title}</p>
-                <h5>{rate}</h5>
+                <p><FaStar/> {props.rating} ({props.reviewCount}) • {props.country}</p>
+                <p>{props.title}</p>
+                <h5>From ${props.price} /person</h5>
             </div>
         </div>
         <div className='cards'>
-            <img src={img} alt="" />
+            <img src={props.img} alt="" />
             <div className='cards-description'>
-                <p><FaStar/> {status}</p>
-                <p>{title}</p>
-                <h5>{rate}</h5>
+                <p><FaStar/> {props.rating} ({props.reviewCount}) • {props.country}</p>
+                <p>{props.title}</p>
+                <h5>From ${props.price} /person</h5>
             </div>
         </div>
         <div className='cards'>
-            <img src={img} alt="" />
+            <img src={props.img} alt="" />
             <div className='cards-description'>
-                <p><FaStar/> {status}</p>
-                <p>{title}</p>
-                <h5>{rate}</h5>
+                <p><FaStar/> {props.rating} ({props.reviewCount}) • {props.country}</p>
+                <p>{props.title}</p>
+                <h5>From ${props.price} /person</h5>
             </div>
         </div>
     </div>

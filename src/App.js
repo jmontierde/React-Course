@@ -9,7 +9,7 @@ import Navbar from './Components/Project2/Navbar';
 import Hero from './Components/Project2/Hero';
 import Cards from './Components/Project2/Cards';
 import Tutorial from './Lesson/Tutorial';
-
+import Map from './Lesson/Map';
 //Icons
  
 // import Header from './Components/Header';
@@ -29,34 +29,35 @@ function App() { // App.js is the parent Compenent wherein it will get all the o
         <Interests />
         <Footer />
       </div> */}
-        <Navbar />
+        {/* <Navbar />
         <Hero 
 
         />
         <Cards
           img = "./card-img1.jpg"
-          status = "5.0 USA"
+          rating = {5}
           reviewCount = {6}
+          country = "USA"
           title = "Do something fun"
-          rate = "From $136 / person"
+          price = {136}
         />
         <Cards
           img = "./card-img2.jpg"
-          status = "5.0 USA"
+          rating = {5}
           reviewCount = {6}
+          country = "USA"
           title = "Learn wedding photography"
-          rate = "From $136 / person"
           price = {136}
         />
         <Cards
           img = "./card-img3.jpg"
-          status = "5.0 USA"
+          rating = {5}
           reviewCount = {6}
+          country = "USA"
           title = "Group mountain bikers"
-          rate = "From $136 / person"
           price = {136}
-        />
-      
+        /> */}
+        <Map />
       {/* <Tutorial /> */}
       {/* <Jokes
         setup = "A woman in labor suddenly shouted, “Shouldn't! Wouldn't! Couldn't! Didn't! Can't!”"
