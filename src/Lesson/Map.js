@@ -34,8 +34,9 @@ function Map() {
     // })
     // console.log(filteredItem);
 
-    // Map Array
-    // const items = [
+    // Map Array 
+    // can run every single inside an array
+    // const items = [ 
     //     {name: 'Bike', price: 100},
     //     {name: 'TV', price: 200},
     //     {name: 'Album', price: 10},
@@ -48,6 +49,26 @@ function Map() {
     //     return item.name
     // })
     // console.log(itemsMap);
+
+    // Challenge1 
+    // const nums = [1,2,3,4,5]
+    // const numsAnswer = nums.map(num => { 
+    //   return num * num;
+    // })
+    // console.log(numsAnswer)
+    
+    // Challenge 2
+    // const names = ['alice', 'bob', 'charlie', 'danielle']
+    // const upperCase = names.map(name => { 
+    //   return name[0].toUpperCase() + name.slice(1);
+    // })
+    // console.log(upperCase);
+
+    // Challenge 3
+    // const pokemon = ['Bulbasaur', 'Charmander', 'Squirtle']
+    // const wrapPokemon = pokemon.map(wrap => `<p>${wrap}</p>`)
+    // console.log(wrapPokemon);
+
 
     // Find() Array
     //  const items = [
@@ -131,12 +152,13 @@ function Map() {
     // console.log(total);
 
     // Includes
-    const items = [1,2,3,4,5]
-    const IncludesTwo = items.includes(2)
-    console.log(IncludesTwo)
+    // const items = [1,2,3,4,5]
+    // const IncludesTwo = items.includes(2)
+    // console.log(IncludesTwo)
 
   return (
-    <div>Maps</div>
+    <div>
+    </div>
   )
 }
 

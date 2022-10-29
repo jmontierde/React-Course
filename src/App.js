@@ -1,15 +1,19 @@
 import './App.css';
 import Jokes from './Components/Challenges/Jokes';
-
+import JokesData from './Components/Challenges/JokesData';
 import Intro from './Components/Project 1/Intro'
 import About from './Components/Project 1/About'
 import Interests from './Components/Project 1/Interests'
 import Footer from './Components/Project 1/Footer'
+//Project 2
 import Navbar from './Components/Project2/Navbar';
 import Hero from './Components/Project2/Hero';
+import data from './Components/Project2/data';
+//
 import Cards from './Components/Project2/Cards';
 import Tutorial from './Lesson/Tutorial';
 import Map from './Lesson/Map';
+
 //Icons
  
 // import Header from './Components/Header';
@@ -17,6 +21,29 @@ import Map from './Lesson/Map';
 // import Footer from './Components/Footer';
 // import About from './Components/About';
 function App() { // App.js is the parent Compenent wherein it will get all the other components
+  // const jokesElement = JokesData.map(elem => { 
+  //   return <Jokes setup={elem.setup} punchline={elem.punchline}/> //Pinasok natin ang setup at punchline sa loob ng jokes upang ma gamit ang props
+  // })
+  // Map data
+  const dataElement = data.map(dataElem => { 
+    return <Cards 
+      key = {dataElem.id}
+      // dataElem = {dataElem}
+      {...dataElem} // Spread Operator, it's the same under this code and You only use props to get the data
+      // title = {dataElem.title}
+      // rating = {dataElem.stats.rating}
+      // description = {dataElem.description}
+      // price = {dataElem.price}
+      // img = {dataElem.img}
+      // stats = {dataElem.stats}
+      // location = {dataElem.location}
+      // openSpots = {dataElem.openSpots}
+      
+    />
+  
+  })
+  
+
   return (
     <div className="App">
       {/* <Header/>
@@ -29,57 +56,16 @@ function App() { // App.js is the parent Compenent wherein it will get all the o
         <Interests />
         <Footer />
       </div> */}
-        {/* <Navbar />
-        <Hero 
-
-        />
-        <Cards
-          img = "./card-img1.jpg"
-          rating = {5}
-          reviewCount = {6}
-          country = "USA"
-          title = "Do something fun"
-          price = {136}
-        />
-        <Cards
-          img = "./card-img2.jpg"
-          rating = {5}
-          reviewCount = {6}
-          country = "USA"
-          title = "Learn wedding photography"
-          price = {136}
-        />
-        <Cards
-          img = "./card-img3.jpg"
-          rating = {5}
-          reviewCount = {6}
-          country = "USA"
-          title = "Group mountain bikers"
-          price = {136}
-        /> */}
-        <Map />
+        <Navbar />
+        <Hero />   
+        {dataElement}
+        {dataElement}
+        {/* <Map /> */}
       {/* <Tutorial /> */}
-      {/* <Jokes
-        setup = "A woman in labor suddenly shouted, “Shouldn't! Wouldn't! Couldn't! Didn't! Can't!”"
-        punchline =  "“Don't worry,” said the doc. “Those are just contractions.”"
-        num = {1}
-      />
-        <Jokes
-        setup = "A bear walks into a bar and says, “Give me a whiskey and … cola.”"
-        punchline =  "“Why the big pause?” asks the bartender. The bear shrugged. “I'm not sure; I was born with them.””"
-      />
-        <Jokes
-        setup = "Did you hear about the actor who fell through the floorboards?"
-        punchline =  "He was just going through a stage."
-      />
-        <Jokes
-        setup = "Did you hear about the claustrophobic astronaut?"
-        punchline =  "He just needed a little space."
-      />
-        <Jokes
-        setup = "Why don't scientists trust atoms?"
-        punchline =  "Because they make up everything."
-      /> */}
+     
+      {/* {jokesElement}  */}
+   
+
     </div>
   );
 }

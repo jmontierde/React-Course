@@ -104,25 +104,40 @@ nav {
 
 
 .card-container { 
-    display: flex;
+    display: inline-block;
     align-items: center;    
-    justify-content: center;
-    gap: 0 1rem;
+    justify-content:flex-start;
+    margin: auto 1rem;
     margin-top: 4rem;
 }
 .cards{
     display: flex;  
     flex-direction: column;
+    position: relative;
+
 }
 .cards img{ 
     width: 300px;
     height: 400px;
 
 }
+
+.cards .openSpots { 
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.907);
+    padding: .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .cards-description { 
     margin: 1rem 0;
     text-align: justify;
     line-height: 1.5;
+    
 }
 .cards-description p {
     color: rgb(120, 120, 120);
